@@ -1,0 +1,38 @@
+{
+  "name": "genpark-cross-border-duty-customs-tariff-calculator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Global e-commerce customs duty, HS code classification, and de minimis import tariff calculator estimating total landed cost.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "cross-border-commerce",
+  "tags": [
+    "customs-duty",
+    "tariffs",
+    "landed-cost",
+    "cross-border-ecommerce",
+    "hs-codes"
+  ],
+  "inputs": {
+    "product_value_usd": {
+      "type": "number",
+      "default": 799.0
+    },
+    "destination_country": {
+      "type": "string",
+      "default": "GB"
+    }
+  },
+  "outputs": {
+    "calculation_id": {
+      "type": "string"
+    },
+    "customs_duty_amount_usd": {
+      "type": "number"
+    },
+    "total_landed_cost_usd": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
